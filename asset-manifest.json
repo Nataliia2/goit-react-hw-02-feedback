@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Nataliia2/goit-react-hw-02-feedback/static/css/main.7acaea2f.css",
+    "main.js": "/Nataliia2/goit-react-hw-02-feedback/static/js/main.cbc0c66f.js",
+    "index.html": "/Nataliia2/goit-react-hw-02-feedback/index.html",
+    "main.7acaea2f.css.map": "/Nataliia2/goit-react-hw-02-feedback/static/css/main.7acaea2f.css.map",
+    "main.cbc0c66f.js.map": "/Nataliia2/goit-react-hw-02-feedback/static/js/main.cbc0c66f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.cbc0c66f.js"
+  ]
+}
