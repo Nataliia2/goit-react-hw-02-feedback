@@ -11,32 +11,15 @@ export class App extends Component {
         bad: 0,
         };
 
-        increaseGood = () => {
-        this.setState(prevState => {
+        increaseStatistics = propertyName => {
+          this.setState(prevState => {
+            const value = prevState[propertyName];
             return {
-                good: prevState.good +1,
+              [propertyName]: value + 1,
             };
-        })
-    };
+          });
+        };
 
-
-        increaseNeutral = () => {
-        this.setState(prevState => {
-            return {
-                neutral: prevState.neutral +1,
-            };
-        })
-    };
-
-    
-
-        increaseBad = () => {
-        this.setState(prevState => {
-            return {
-                bad: prevState.bad +1,
-            };
-        })
-    };
     
     countTotalFeedback = () => {
         const { good, neutral, bad } = this.state;
@@ -53,9 +36,7 @@ export class App extends Component {
           <>  
                 <Section title="Please leave feedback">
                   <FeedbackOptions 
-                    onIncreaseGood = {this.increaseGood}
-                    onIncreaseNeutral = {this.increaseNeutral} 
-                    onIncreaseBad = {this.increaseBad}
+                    onIncreaseStatistics = {this.increaseStatistics} 
                   />
                 </Section>
 
